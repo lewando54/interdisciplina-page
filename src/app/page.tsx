@@ -2,8 +2,8 @@ import { HackathonHero } from "@/components/HackathonHero";
 
 export default function Home() {
   return (
-    <div className="flex min-h-full flex-1 flex-col items-center bg-zinc-50 font-sans dark:bg-zinc-950">
-      <main className="flex w-full flex-1 flex-col items-center bg-white dark:bg-zinc-950">
+    <div className="flex min-h-full flex-1 flex-col items-center bg-gradient-to-b from-stone-50 via-orange-50/35 to-stone-100/90">
+      <main className="flex w-full flex-1 flex-col items-center">
         <HackathonHero />
       </main>
     </div>
