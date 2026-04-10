@@ -30,7 +30,7 @@ export function SiteNavbar() {
         >
           <span className="relative inline-grid h-10 max-w-[min(18rem,70vw)] place-items-start [grid-template-areas:'logo']">
             <Image
-              src="/Inter_small.svg"
+              src="Inter_small.svg"
               alt=""
               width={1500}
               height={1500}
@@ -40,7 +40,7 @@ export function SiteNavbar() {
               }`}
             />
             <Image
-              src="/Inter_small.svg"
+              src="Inter_small.svg"
               alt=""
               width={1500}
               height={1500}
