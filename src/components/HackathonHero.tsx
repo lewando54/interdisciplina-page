@@ -20,7 +20,7 @@ export function HackathonHero() {
           <AnimatedInterFinal width={1500} height={1500} />
         </div>
 
-        <div className="flex flex-col gap-8 text-left w-full mt-4">
+        <div className="flex flex-col gap-8 text-left w-full mt-10">
           <div className="flex flex-col sm:flex-row sm:items-baseline gap-3 sm:gap-4">
             <motion.h1
               className="group relative inline-block text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-stone-900 cursor-default"

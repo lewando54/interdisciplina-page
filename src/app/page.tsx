@@ -1,3 +1,4 @@
+import { Clock } from "@/components/Clock";
 import { HackathonHero } from "@/components/HackathonHero";
 import { TeamSection } from "@/components/TeamSection";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <main className="flex w-full flex-1 flex-col items-center">
         <HackathonHero />
         <TeamSection />
+        <Clock date="2026-04-24T16:00:00" />
       </main>
     </div>
   );
