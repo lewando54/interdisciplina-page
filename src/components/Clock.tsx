@@ -18,11 +18,11 @@ export function Clock({ date }: { date: string }) {
   const [time, setTime] = useState<ITimeLeft | null>(null);
 
   useEffect(() => {
-    // @ts-expect-error
+    // @ts-expect-error - moment.preciseDiff is not typed
     setTime(moment.preciseDiff(new Date(date), new Date(), true));
     
     const interval = setInterval(() => {
-      // @ts-expect-error
+      // @ts-expect-error - moment.preciseDiff is not typed
       setTime(moment.preciseDiff(new Date(date), new Date(), true));
     }, 1000);
 
