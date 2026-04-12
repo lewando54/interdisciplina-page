@@ -15,15 +15,14 @@ export interface ITimeLeft {
 }
 
 export function Clock({ date }: { date: string }) {
-  // @ts-ignore
   const [time, setTime] = useState<ITimeLeft | null>(null);
 
   useEffect(() => {
-    // @ts-ignore
+    // @ts-expect-error
     setTime(moment.preciseDiff(new Date(date), new Date(), true));
     
     const interval = setInterval(() => {
-      // @ts-ignore
+      // @ts-expect-error
       setTime(moment.preciseDiff(new Date(date), new Date(), true));
     }, 1000);
 
