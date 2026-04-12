@@ -50,6 +50,38 @@ export function SiteNavbar() {
             />
           </span>
         </Link>
+        <div className="flex items-center gap-4">
+          <Link 
+            href="#team" 
+            onClick={(e) => {
+              const element = document.getElementById("team");
+              if (element) {
+                e.preventDefault();
+                element.scrollIntoView({ behavior: "smooth" });
+                // Update URL without jumping
+                window.history.pushState(null, "", "#team");
+              }
+            }}
+            className="text-stone-900 hover:text-yellow-500 transition-colors duration-200 font-semibold"
+          >
+            Nasz Zespół
+          </Link>
+          <Link 
+            href="#filmik" 
+            onClick={(e) => {
+              const element = document.getElementById("filmik");
+              if (element) {
+                e.preventDefault();
+                element.scrollIntoView({ behavior: "smooth" });
+                // Update URL without jumping
+                window.history.pushState(null, "", "#filmik");
+              }
+            }}
+            className="text-stone-900 hover:text-yellow-500 transition-colors duration-200 font-semibold"
+          >
+            Film
+          </Link>
+        </div>
       </div>
     </header>
   );
