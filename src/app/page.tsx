@@ -18,7 +18,7 @@ export default function Home() {
               controls 
               preload="metadata"
             >
-              <source src="/filmik.mp4" type="video/mp4" />
+              <source src="filmik.mp4" type="video/mp4" />
               Twoja przeglądarka nie obsługuje odtwarzacza wideo.
             </video>
           </div>
