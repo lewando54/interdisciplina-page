@@ -76,20 +76,28 @@ export default function ProjektPage() {
   return (
     <div className="flex min-h-full flex-1 flex-col items-center bg-stone-50 pb-20">
       {/* Hero Section */}
-      <section className="w-full bg-gradient-to-b from-stone-50 via-orange-50/35 to-stone-100/90 py-16 sm:py-24">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+      <section className="w-full relative overflow-hidden bg-stone-950 py-20 sm:py-32">
+        {/* Subtle background dots */}
+        <div className="absolute inset-0 opacity-[0.07]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)', backgroundSize: '32px 32px' }}></div>
+        
+        {/* Subtle gradient glows */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-orange-500/15 blur-[100px] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-1/2 right-0 w-96 h-96 bg-orange-400/5 blur-[100px] rounded-full pointer-events-none"></div>
+
+        <div className="mx-auto max-w-4xl px-6 text-center relative z-10">
           <FadeIn direction="up" delay={0.1}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-stone-900 mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white mb-6">
               ZDALNA OCENA OBCIĄŻENIA (ZOO)
             </h1>
           </FadeIn>
           <FadeIn direction="up" delay={0.2}>
-            <p className="text-xl sm:text-2xl text-stone-600 mb-8 max-w-3xl mx-auto font-medium">
+            <p className="text-xl sm:text-2xl text-stone-300 mb-8 max-w-3xl mx-auto font-medium">
               System wczesnego wykrywania ryzyka wypalenia i schemat interwencji sponsora
             </p>
           </FadeIn>
           <FadeIn direction="up" delay={0.3}>
-            <p className="text-lg text-stone-500 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-stone-400 max-w-2xl mx-auto leading-relaxed">
               Dyskretny system pokazujący ryzyko przeciążenia na poziomie zespołu lub ośrodka badań klinicznych. 
               Nie oceniamy pojedynczych pracowników — chronimy całe struktury przed wypaleniem, zapewniając ich stabilność.
             </p>
