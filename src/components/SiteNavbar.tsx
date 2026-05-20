@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import interSmallLogo from "../../public/Inter_small.svg";
 
 const SCROLL_THRESHOLD_PX = 12;
 const LOGO_MAIN_HEIGHT_CLASS = "h-10";
@@ -30,7 +31,7 @@ export function SiteNavbar() {
         >
           <span className="relative inline-grid h-10 max-w-[min(18rem,70vw)] place-items-start [grid-template-areas:'logo']">
             <Image
-              src="Inter_small.svg"
+              src={interSmallLogo}
               alt=""
               width={1500}
               height={1500}
@@ -40,7 +41,7 @@ export function SiteNavbar() {
               }`}
             />
             <Image
-              src="Inter_small.svg"
+              src={interSmallLogo}
               alt=""
               width={1500}
               height={1500}

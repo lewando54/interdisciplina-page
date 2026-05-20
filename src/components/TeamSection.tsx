@@ -4,10 +4,17 @@ import Image from "next/image";
 import { HexagonIcon } from "./HexagonIcon";
 import { motion } from "framer-motion";
 
+import agataImg from "../../public/osoby/agata.jpg";
+import gabrysiaImg from "../../public/osoby/gabrysia.jpeg";
+import martaImg from "../../public/osoby/marta.jpeg";
+import kubaKImg from "../../public/osoby/kuba_k.jpeg";
+import dominikaImg from "../../public/osoby/dominika.jpg";
+import kubaLbImg from "../../public/osoby/kuba_lb.png";
+
 const teamMembers = [
   {
     name: "Agata Budny-Lewandowska",
-    image: "osoby/agata.jpg",
+    image: agataImg,
     color: "border-[#e4aad9]",
     hexColor: "#e4aad9",
     hexX: 48,
@@ -17,7 +24,7 @@ const teamMembers = [
   },
   {
     name: "Gabriela Rosiak",
-    image: "osoby/gabrysia.jpeg",
+    image: gabrysiaImg,
     color: "border-[#95dde1]",
     hexColor: "#95dde1",
     hexX: 304,
@@ -27,7 +34,7 @@ const teamMembers = [
   },
   {
     name: "Marta Sztuka",
-    image: "osoby/marta.jpeg",
+    image: martaImg,
     color: "border-[#abc4a5]",
     hexColor: "#abc4a5",
     hexX: 554,
@@ -37,7 +44,7 @@ const teamMembers = [
   },
   {
     name: "Jakub Kwasiborski",
-    image: "osoby/kuba_k.jpeg",
+    image: kubaKImg,
     color: "border-[#ffc9a7]",
     hexColor: "#ffc9a7",
     hexX: 304,
@@ -47,7 +54,7 @@ const teamMembers = [
   },
   {
     name: "Dominika Przybylska",
-    image: "osoby/dominika.jpg",
+    image: dominikaImg,
     color: "border-[#b47bd1]",
     hexColor: "#b47bd1",
     hexX: 48,
@@ -57,7 +64,7 @@ const teamMembers = [
   },
   {
     name: "Jakub Lewandowski-Budny",
-    image: "osoby/kuba_lb.png",
+    image: kubaLbImg,
     color: "border-[#ddcf97]",
     hexColor: "#ddcf97",
     hexX: 304,

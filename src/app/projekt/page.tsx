@@ -118,7 +118,7 @@ export default function ProjektPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
             <FadeIn direction="up" delay={0.1} className="md:col-span-2">
               <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-stone-100 h-full">
-                <h3 className="text-xl font-bold text-stone-800 mb-6 border-b border-stone-100 pb-4">Skutki wypalenia i stresu</h3>
+                <h3 className="text-xl font-bold text-stone-800 mb-6 border-b border-stone-100 pb-4">Stan pracowników</h3>
                 <MainStatsChart />
               </div>
             </FadeIn>
